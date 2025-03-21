@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+
+}
+
+.navbar::before {
+    content: " ";
+    position: absolute;
+    background-color: #dfdada;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    font-size: 1.1rem;
+}
+
+.navbar ul li a{
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #0c0101;
+}
+
+.navbar ul li a:hover {
+    border-bottom: 2px solid #080808;
+}
+
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 700px;  
+    justify-content: center;
+    align-items: center;
+    background-color: #dfdada;
+    content: "";
+    position: relative; 
+    top: 0;
+    left: 0;
+    background: url('meleslie.jpg') no-repeat center center/cover;
+    width: 100%;
+    z-index: -1; 
+    color: black;
+}
+
+.heading, #home p {
+    text-align: left; 
+}
+.heading {
+    color: black;
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    transform: scale(1,1.3);
+}
+
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    background-color: #dfdada;
+}
+
+#portfolio h1 {
+    margin: 60px;
+
+}
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 360px;
+    height: 600px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.gallery img:hover{
+    background-color: rgb(233, 151, 151);
+    cursor: pointer;
+}
+
+#education { 
+    display: flex;
+    flex-direction: column;
+    background-color: #dfdada;
+}
+
+#education h1{
+    margin: 60px;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 120px;
+}
+
+.box {
+    height: 200px;
+    width: 500px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(255, 163, 163, 0.9);
+}
+
+.box h2{
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.box p{
+    color: black;
+    font-size: 1.1rem;
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    background-color: #dfdada;
+    text-align: justify;
+    height: 100%;
+}
+
+#about h1{
+    color: black;
+    margin: 55px;
+    align-items: center;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.about img {
+    width: 500px;
+    height: 400px;
+    padding: 0px 30px;
+    box-shadow: 4px rgba(255, 163, 163, 0.9);
+}
+
+.name {
+    padding: 10px;
+}
+
+.name h2 {
+    font-size: 2.5rem;
+}
+
+.name p {
+    font-size: 1.5rem;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    background-color: white ;
+}
+
+#contact h1{
+    margin: 50px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input {
+    padding: 15px 20px;
+    margin: 15px;
+    width: 40%;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    background-color: #dfdada;
+}
+
+#message {
+    margin: 15px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#submit {
+    padding: 15px 20px;
+    margin: 30px;
+    width: 15%;
+    border-radius: 20px;
+    background-color: #dfdada;
+    color: black;
+    border: none;
+    outline: none;
+}
+
+#submit:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
